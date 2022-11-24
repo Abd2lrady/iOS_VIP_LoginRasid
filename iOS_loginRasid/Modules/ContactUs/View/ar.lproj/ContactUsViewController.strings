@@ -1,0 +1,30 @@
+
+/* Class = "UITextField"; placeholder = "enter phone"; ObjectID = "BL8-tp-gfh"; */
+"BL8-tp-gfh.placeholder" = "ادخل رقم الجوال";
+
+/* Class = "UILabel"; text = "customer name"; ObjectID = "CjG-fe-Vq6"; */
+"CjG-fe-Vq6.text" = "اسم العميل";
+
+/* Class = "UILabel"; text = "message"; ObjectID = "Ddo-OW-8dk"; */
+"Ddo-OW-8dk.text" = "الرسالة";
+
+/* Class = "UITextField"; placeholder = "enter customer name"; ObjectID = "Dk5-wB-a9J"; */
+"Dk5-wB-a9J.placeholder" = "ادخل اسم العميل";
+
+/* Class = "UILabel"; text = "phone"; ObjectID = "FS9-hf-MYj"; */
+"FS9-hf-MYj.text" = "رقم الجوال";
+
+/* Class = "UITextField"; placeholder = "enter regoin"; ObjectID = "N6P-Yx-sXm"; */
+"N6P-Yx-sXm.placeholder" = "اختر نوع الرسالة";
+
+/* Class = "UITextField"; placeholder = "enter message"; ObjectID = "YhZ-ph-iah"; */
+"YhZ-ph-iah.placeholder" = "ادخل محتوى الرسالة";
+
+/* Class = "UILabel"; text = "region"; ObjectID = "lJG-oU-nGi"; */
+"lJG-oU-nGi.text" = "نوع الرسالة";
+
+/* Class = "UIButton"; normalTitle = "send"; ObjectID = "p43-fr-jRC"; */
+"p43-fr-jRC.normalTitle" = "إرسال";
+
+/* Class = "UILabel"; text = "تواصل معنا"; ObjectID = "qZY-Sb-O4c"; */
+"qZY-Sb-O4c.text" = "تواصل معنا";

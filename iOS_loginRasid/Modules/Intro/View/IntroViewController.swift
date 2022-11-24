@@ -25,15 +25,15 @@ class IntroViewController: UIViewController {
     }
     
     @IBAction func loginButtonAction(_ sender: Any) {
-        router?.routeLogin()
+        router?.loginTapped()
     }
     
     @IBAction func registerButtonAction(_ sender: Any) {
-        router?.routeRegister()
+        router?.registerTapped()
     }
     
     @IBAction func contactUsButtonAction(_ sender: Any) {
-        router?.routeContactUs()
+        router?.contactUsTapped()
     }
     
 }

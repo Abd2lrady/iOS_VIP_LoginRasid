@@ -8,9 +8,9 @@
 import Foundation
 
 protocol IntroRouterProtocol {
-    func routeLogin()
-    func routeContactUs()
-    func routeRegister()
+    func loginTapped()
+    func contactUsTapped()
+    func registerTapped()
 }
 
 class IntroRouter {
@@ -28,16 +28,27 @@ class IntroRouter {
 
 extension IntroRouter: IntroRouterProtocol {
     
-    func routeLogin() {
+    func loginTapped() {
         print("route login")
     }
     
-    func routeContactUs() {
+    func contactUsTapped() {
         print("route contactUs")
+        navToContactUs()
     }
     
-    func routeRegister() {
+    func registerTapped() {
         print("route Register")
+    }
+    
+    private func navToContactUs() {
+        
+        guard let navigator = (view as? IntroViewController)?.navigationController
+        else { return }
+        
+        let view = ContactUsConfigurator.configure()
+        navigator.pushViewController(view,
+                                     animated: true)
     }
 
 }
