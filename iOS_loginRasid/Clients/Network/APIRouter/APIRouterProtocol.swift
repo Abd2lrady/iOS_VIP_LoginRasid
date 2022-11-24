@@ -13,7 +13,7 @@ protocol APIRouterProtocol {
     var path: String { get }
     var method: NetworkRequestMethod { get }
     var headers: [String: String]? { get }
-    var parameters: [String: Any] { get }
+    var parameters: [String: String] { get }
 }
 
 enum NetworkRequestScheme: String {

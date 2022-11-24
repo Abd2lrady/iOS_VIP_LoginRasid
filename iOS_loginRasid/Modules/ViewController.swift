@@ -13,9 +13,13 @@ class ViewController: UIViewController {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
         view.backgroundColor = Colors.test.color
-        let loginParam = ["username": "1123456789", "password": "Mm@12345"]
-        APIClient.shared.request(for: AuthAPIRouter.login(loginParam: loginParam),
-                                 responseType: ServerResponse<UserEntity>.self) { result in
+        
+        let credentials = LoginCredentials(username: "1234965878",
+                                           password: "Mm@123456")
+        
+//        let loginParam = ["username": "1123456789", "password": "Mm@12345"]
+   
+        AuthRepo().login(credentials: credentials) { result in
             switch result {
             case .success(let success):
                 print(success)
@@ -23,7 +27,5 @@ class ViewController: UIViewController {
                 print(failure)
             }
         }
-
     }
-
 }

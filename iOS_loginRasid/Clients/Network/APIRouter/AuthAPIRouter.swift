@@ -44,7 +44,7 @@ extension AuthAPIRouter: APIRouterProtocol {
         }
     }
     
-    var parameters: [String: Any] {
+    var parameters: [String: String] {
         switch self {
         case .login(let loginParam):
             return loginParam
