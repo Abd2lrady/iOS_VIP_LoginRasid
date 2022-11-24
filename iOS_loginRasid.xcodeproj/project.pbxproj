@@ -58,15 +58,135 @@
 		3C2C55EE292F465500C316FB /* iOS_loginRasid */ = {
 			isa = PBXGroup;
 			children = (
-				3C2C55EF292F465500C316FB /* AppDelegate.swift */,
-				3C2C5606292F489500C316FB /* SceneDelegate+Extension.swift */,
-				3C2C55F1292F465500C316FB /* SceneDelegate.swift */,
+				3C2C5608292F4A3F00C316FB /* AppDelegate + SceneDelegate */,
+				3C2C5610292F4AB900C316FB /* Storyboard */,
+				3C2C5609292F4A5A00C316FB /* Resources */,
+				3C2C5614292F4B5600C316FB /* Extensions */,
+				3C2C5611292F4B1500C316FB /* Client */,
+				3C2C5612292F4B1F00C316FB /* Services */,
+				3C2C5613292F4B2F00C316FB /* Modules */,
 				3C2C55F3292F465500C316FB /* ViewController.swift */,
-				3C2C55F8292F465500C316FB /* Assets.xcassets */,
-				3C2C55FA292F465500C316FB /* LaunchScreen.storyboard */,
-				3C2C55FD292F465500C316FB /* Info.plist */,
 			);
 			path = iOS_loginRasid;
+			sourceTree = "<group>";
+		};
+		3C2C5608292F4A3F00C316FB /* AppDelegate + SceneDelegate */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C55EF292F465500C316FB /* AppDelegate.swift */,
+				3C2C55F1292F465500C316FB /* SceneDelegate.swift */,
+				3C2C5606292F489500C316FB /* SceneDelegate+Extension.swift */,
+			);
+			path = "AppDelegate + SceneDelegate";
+			sourceTree = "<group>";
+		};
+		3C2C5609292F4A5A00C316FB /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C560C292F4A7F00C316FB /* Plist */,
+				3C2C560B292F4A7700C316FB /* Constants */,
+				3C2C560A292F4A6400C316FB /* Assets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		3C2C560A292F4A6400C316FB /* Assets */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C560F292F4A9F00C316FB /* Colors */,
+				3C2C560E292F4A9900C316FB /* Fonts */,
+				3C2C560D292F4A9300C316FB /* Images */,
+			);
+			path = Assets;
+			sourceTree = "<group>";
+		};
+		3C2C560B292F4A7700C316FB /* Constants */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Constants;
+			sourceTree = "<group>";
+		};
+		3C2C560C292F4A7F00C316FB /* Plist */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C55FD292F465500C316FB /* Info.plist */,
+			);
+			path = Plist;
+			sourceTree = "<group>";
+		};
+		3C2C560D292F4A9300C316FB /* Images */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C55F8292F465500C316FB /* Assets.xcassets */,
+			);
+			path = Images;
+			sourceTree = "<group>";
+		};
+		3C2C560E292F4A9900C316FB /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		3C2C560F292F4A9F00C316FB /* Colors */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Colors;
+			sourceTree = "<group>";
+		};
+		3C2C5610292F4AB900C316FB /* Storyboard */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C55FA292F465500C316FB /* LaunchScreen.storyboard */,
+			);
+			path = Storyboard;
+			sourceTree = "<group>";
+		};
+		3C2C5611292F4B1500C316FB /* Client */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Client;
+			sourceTree = "<group>";
+		};
+		3C2C5612292F4B1F00C316FB /* Services */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		3C2C5613292F4B2F00C316FB /* Modules */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C5615292F4BB800C316FB /* Login */,
+			);
+			path = Modules;
+			sourceTree = "<group>";
+		};
+		3C2C5614292F4B5600C316FB /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		3C2C5615292F4BB800C316FB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C5616292F4BC900C316FB /* Scenes */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3C2C5616292F4BC900C316FB /* Scenes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Scenes;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
