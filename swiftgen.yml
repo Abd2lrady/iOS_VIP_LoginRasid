@@ -1,0 +1,34 @@
+input_dir: iOS_loginRasid/Resources/Assets
+output_dir: iOS_loginRasid/Resources/Assets
+
+xcassets:
+  - inputs: Colors/Colors.xcassets
+    outputs:
+        templateName: swift5
+        output: Colors/Colors.swift
+        params:
+            enumName: Colors
+  
+  - inputs: Images/Images.xcassets
+    outputs:
+        templateName: swift5
+        output: Images/Images.swift
+        params:
+            enumName: Images
+      
+fonts:
+  - inputs: Fonts
+    outputs:
+        templateName: swift5
+        output: Fonts/Fonts.swift
+        params:
+            enumName: Fonts
+         
+#strings:
+#  - inputs: Strings/en.lproj/Localizable.strings
+#    outputs:
+#        templateName: structured-swift4
+#        output: Strings/Strings.swift
+#        params:
+#            enumName: Strings
+            
