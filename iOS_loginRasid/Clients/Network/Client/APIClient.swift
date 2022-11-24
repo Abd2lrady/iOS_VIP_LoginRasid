@@ -12,6 +12,8 @@ typealias APIRouterProtocolAndConvertible = APIRouterProtocol & URLRequestConver
 
 enum APIError: Error {
     case noStatusCode
+    case unauthorized
+    case genericError(Int)
 }
 
 class APIClient {
@@ -32,19 +34,16 @@ class APIClient {
                 completionHandler(.failure(APIError.noStatusCode))
                 return
             }
-
-            if  (200 ..< 300) ~= statusCode {
-                    switch response.result {
-                    case .success(let data):
-                        do {
-                            let response = try JSONDecoder().decode(ResponseType.self, from: data)
-                            completionHandler(.success(response))
-                        } catch {
-                            completionHandler(.failure(error))
-                        }
-                    case .failure(let error):
-                        completionHandler(.failure(error))
+            switch response.result {
+            case .success(let data):
+                do {
+                    let response = try JSONDecoder().decode(ResponseType.self, from: data)
+                    completionHandler(.success(response))
+                } catch {
+                    completionHandler(.failure(error))
                 }
+            case .failure(let error):
+                completionHandler(.failure(error))
             }
         }
     }
