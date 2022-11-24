@@ -16,6 +16,9 @@
 		3C2C5607292F489500C316FB /* SceneDelegate+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5606292F489500C316FB /* SceneDelegate+Extension.swift */; };
 		3C2C561A292F4D6200C316FB /* swiftgen.yml in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5619292F4D6200C316FB /* swiftgen.yml */; };
 		3C2C561D292F4DF900C316FB /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C561C292F4DF900C316FB /* Colors.xcassets */; };
+		3C2C561F292F509C00C316FB /* Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C561E292F509B00C316FB /* Colors.swift */; };
+		3C2C5621292F50AE00C316FB /* Images.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5620292F50AE00C316FB /* Images.swift */; };
+		3C2C5623292F50C400C316FB /* Fonts.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5622292F50C400C316FB /* Fonts.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -29,6 +32,14 @@
 		3C2C5606292F489500C316FB /* SceneDelegate+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "SceneDelegate+Extension.swift"; sourceTree = "<group>"; };
 		3C2C5619292F4D6200C316FB /* swiftgen.yml */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.yaml; path = swiftgen.yml; sourceTree = "<group>"; };
 		3C2C561C292F4DF900C316FB /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		3C2C561E292F509B00C316FB /* Colors.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Colors.swift; sourceTree = "<group>"; };
+		3C2C5620292F50AE00C316FB /* Images.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Images.swift; sourceTree = "<group>"; };
+		3C2C5622292F50C400C316FB /* Fonts.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Fonts.swift; sourceTree = "<group>"; };
+		3C2C5624292F517D00C316FB /* Cairo-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Medium.ttf"; sourceTree = "<group>"; };
+		3C2C5625292F517D00C316FB /* Cairo-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Regular.ttf"; sourceTree = "<group>"; };
+		3C2C5626292F517E00C316FB /* Cairo-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Bold.ttf"; sourceTree = "<group>"; };
+		3C2C5627292F517E00C316FB /* Cairo-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Black.ttf"; sourceTree = "<group>"; };
+		3C2C5628292F517E00C316FB /* Cairo-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Cairo-Light.ttf"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -124,6 +135,7 @@
 		3C2C560D292F4A9300C316FB /* Images */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C5620292F50AE00C316FB /* Images.swift */,
 				3C2C55F8292F465500C316FB /* Images.xcassets */,
 			);
 			path = Images;
@@ -132,6 +144,12 @@
 		3C2C560E292F4A9900C316FB /* Fonts */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C5627292F517E00C316FB /* Cairo-Black.ttf */,
+				3C2C5626292F517E00C316FB /* Cairo-Bold.ttf */,
+				3C2C5628292F517E00C316FB /* Cairo-Light.ttf */,
+				3C2C5624292F517D00C316FB /* Cairo-Medium.ttf */,
+				3C2C5625292F517D00C316FB /* Cairo-Regular.ttf */,
+				3C2C5622292F50C400C316FB /* Fonts.swift */,
 			);
 			path = Fonts;
 			sourceTree = "<group>";
@@ -139,6 +157,7 @@
 		3C2C560F292F4A9F00C316FB /* Colors */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C561E292F509B00C316FB /* Colors.swift */,
 				3C2C561C292F4DF900C316FB /* Colors.xcassets */,
 			);
 			path = Colors;
@@ -322,7 +341,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3C2C5623292F50C400C316FB /* Fonts.swift in Sources */,
 				3C2C55F4292F465500C316FB /* ViewController.swift in Sources */,
+				3C2C5621292F50AE00C316FB /* Images.swift in Sources */,
+				3C2C561F292F509C00C316FB /* Colors.swift in Sources */,
 				3C2C5607292F489500C316FB /* SceneDelegate+Extension.swift in Sources */,
 				3C2C55F0292F465500C316FB /* AppDelegate.swift in Sources */,
 				3C2C55F2292F465500C316FB /* SceneDelegate.swift in Sources */,
