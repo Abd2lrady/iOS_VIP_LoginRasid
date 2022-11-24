@@ -1,0 +1,17 @@
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "Cyq-zQ-O3B"; */
+"Cyq-zQ-O3B.normalTitle" = "";
+
+/* Class = "UIButton"; normalTitle = "register"; ObjectID = "Qhh-8x-gDi"; */
+"Qhh-8x-gDi.normalTitle" = "إنشاء حساب جديد";
+
+/* Class = "UILabel"; text = "Hello"; ObjectID = "fx4-mb-mEI"; */
+"fx4-mb-mEI.text" = "مرحباً بك فى  رصيد جاك";
+
+/* Class = "UILabel"; text = "Can"; ObjectID = "gvK-ii-FXy"; */
+"gvK-ii-FXy.text" = "يمكنك ادارة مدفوعاتك بكل سهولة ويسر";
+
+/* Class = "UIButton"; normalTitle = "login"; ObjectID = "yPa-hV-zoA"; */
+"yPa-hV-zoA.normalTitle" = "تسجيل دخول";
+
+

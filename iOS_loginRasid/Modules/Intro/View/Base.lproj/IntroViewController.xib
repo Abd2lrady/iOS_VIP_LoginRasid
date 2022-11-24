@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="21225" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_12" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="21207"/>
+        <capability name="Named colors" minToolsVersion="9.0"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <customFonts key="customFonts">
+        <array key="Cairo-Regular.ttf">
+            <string>Cairo-Regular</string>
+        </array>
+    </customFonts>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="IntroViewController" customModule="iOS_loginRasid" customModuleProvider="target">
+            <connections>
+                <outlet property="view" destination="i5M-Pr-FkT" id="sfx-zR-JGt"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view clearsContextBeforeDrawing="NO" contentMode="scaleToFill" id="i5M-Pr-FkT">
+            <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="equalSpacing" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="gqU-PP-mhe">
+                    <rect key="frame" x="16" y="66.999999999999972" width="361" height="448.33333333333326"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="i1h-fF-Pva">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="356.33333333333331"/>
+                            <subviews>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="login_ic" translatesAutoresizingMaskIntoConstraints="NO" id="f2a-Bj-Lhv">
+                                    <rect key="frame" x="0.0" y="0.0" width="361" height="356.33333333333331"/>
+                                </imageView>
+                                <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="logo_ic" translatesAutoresizingMaskIntoConstraints="NO" id="62X-GG-obj">
+                                    <rect key="frame" x="138" y="32" width="85" height="32"/>
+                                    <constraints>
+                                        <constraint firstAttribute="width" constant="85" id="Elb-Qr-Wh5"/>
+                                        <constraint firstAttribute="height" constant="32" id="jk6-Kd-FU1"/>
+                                    </constraints>
+                                </imageView>
+                            </subviews>
+                            <color key="backgroundColor" name="LightGray"/>
+                            <constraints>
+                                <constraint firstItem="f2a-Bj-Lhv" firstAttribute="height" secondItem="i1h-fF-Pva" secondAttribute="height" id="H6E-8o-nAA"/>
+                                <constraint firstItem="62X-GG-obj" firstAttribute="top" secondItem="f2a-Bj-Lhv" secondAttribute="top" constant="32" id="Nh4-Nx-vDH"/>
+                                <constraint firstItem="62X-GG-obj" firstAttribute="centerX" secondItem="i1h-fF-Pva" secondAttribute="centerX" id="Ujz-Ef-VrC"/>
+                                <constraint firstItem="f2a-Bj-Lhv" firstAttribute="centerX" secondItem="i1h-fF-Pva" secondAttribute="centerX" id="hbj-6j-dX7"/>
+                                <constraint firstItem="f2a-Bj-Lhv" firstAttribute="top" secondItem="i1h-fF-Pva" secondAttribute="top" id="jhI-iX-x6G"/>
+                                <constraint firstItem="f2a-Bj-Lhv" firstAttribute="width" secondItem="i1h-fF-Pva" secondAttribute="width" id="qiw-4A-Gvs"/>
+                            </constraints>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="10"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </view>
+                        <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" alignment="center" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="pDK-d2-mBj">
+                            <rect key="frame" x="163" y="372.33333333333331" width="35" height="76"/>
+                            <subviews>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Hello" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="fx4-mb-mEI" userLabel="Hello Label">
+                                    <rect key="frame" x="0.0" y="0.0" width="35" height="30"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                    <color key="textColor" name="DarkBlue"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Can" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="gvK-ii-FXy" userLabel="Payment Label">
+                                    <rect key="frame" x="4.666666666666659" y="46" width="25.666666666666671" height="30"/>
+                                    <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                                    <color key="textColor" name="DarkGray"/>
+                                    <nil key="highlightedColor"/>
+                                </label>
+                            </subviews>
+                        </stackView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstItem="i1h-fF-Pva" firstAttribute="top" secondItem="gqU-PP-mhe" secondAttribute="top" id="xqe-DA-Vcq"/>
+                    </constraints>
+                </stackView>
+                <stackView opaque="NO" contentMode="scaleToFill" axis="vertical" distribution="fillEqually" spacing="16" translatesAutoresizingMaskIntoConstraints="NO" id="00K-rt-TMy">
+                    <rect key="frame" x="16" y="563.33333333333337" width="361" height="176"/>
+                    <subviews>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="yPa-hV-zoA" userLabel="LoginButton">
+                            <rect key="frame" x="0.0" y="0.0" width="361" height="48"/>
+                            <color key="backgroundColor" name="DarkBlue"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="48" id="6jO-Gw-vX3"/>
+                            </constraints>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="login">
+                                <color key="titleColor" red="0.95686274510000002" green="0.96470588239999999" blue="0.97254901959999995" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="DarkBlue"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="loginButtonAction:" destination="-1" eventType="touchUpInside" id="SK5-ge-SAq"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Qhh-8x-gDi" userLabel="RegisterButton">
+                            <rect key="frame" x="0.0" y="64" width="361" height="48"/>
+                            <fontDescription key="fontDescription" name="Cairo-Regular" family="Cairo" pointSize="16"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal" title="register">
+                                <color key="titleColor" red="0.0" green="0.39607843139999999" blue="0.69019607839999997" alpha="1" colorSpace="calibratedRGB"/>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="DarkBlue"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="radius">
+                                    <real key="value" value="7"/>
+                                </userDefinedRuntimeAttribute>
+                                <userDefinedRuntimeAttribute type="number" keyPath="borderWidth">
+                                    <real key="value" value="1"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                            <connections>
+                                <action selector="registerButtonAction:" destination="-1" eventType="touchUpInside" id="ABn-y6-Djb"/>
+                            </connections>
+                        </button>
+                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" hasAttributedTitle="YES" translatesAutoresizingMaskIntoConstraints="NO" id="bqw-8X-YA5" userLabel="FollowUpButton">
+                            <rect key="frame" x="0.0" y="128" width="361" height="48"/>
+                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                            <state key="normal">
+                                <attributedString key="attributedTitle">
+                                    <fragment content="متابعة طلب">
+                                        <attributes>
+                                            <color key="NSColor" red="0.1647058874" green="0.38823530080000002" blue="0.67058825489999996" alpha="1" colorSpace="custom" customColorSpace="displayP3"/>
+                                            <font key="NSFont" size="16" name="Cairo-Regular"/>
+                                            <paragraphStyle key="NSParagraphStyle" alignment="natural" lineBreakMode="wordWrapping" baseWritingDirection="natural" tighteningFactorForTruncation="0.0"/>
+                                            <integer key="NSUnderline" value="1"/>
+                                        </attributes>
+                                    </fragment>
+                                </attributedString>
+                            </state>
+                            <userDefinedRuntimeAttributes>
+                                <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                                    <color key="value" name="DarkBlue"/>
+                                </userDefinedRuntimeAttribute>
+                            </userDefinedRuntimeAttributes>
+                        </button>
+                    </subviews>
+                    <userDefinedRuntimeAttributes>
+                        <userDefinedRuntimeAttribute type="color" keyPath="borderColor">
+                            <color key="value" name="DarkBlue"/>
+                        </userDefinedRuntimeAttribute>
+                    </userDefinedRuntimeAttributes>
+                </stackView>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Cyq-zQ-O3B">
+                    <rect key="frame" x="16" y="780" width="56" height="56"/>
+                    <constraints>
+                        <constraint firstAttribute="width" constant="56" id="Soa-YI-59Q"/>
+                        <constraint firstAttribute="height" constant="56" id="qVk-g1-r23"/>
+                    </constraints>
+                    <state key="normal" title="Button"/>
+                    <buttonConfiguration key="configuration" style="plain" image="contactUs_ic" title=""/>
+                    <connections>
+                        <action selector="contactUsButtonAction:" destination="-1" eventType="touchUpInside" id="Fis-EP-ziW"/>
+                    </connections>
+                </button>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="fnl-2z-Ty3"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gqU-PP-mhe" firstAttribute="top" secondItem="fnl-2z-Ty3" secondAttribute="top" constant="8" id="4KO-yg-mNC"/>
+                <constraint firstItem="00K-rt-TMy" firstAttribute="top" secondItem="gqU-PP-mhe" secondAttribute="bottom" constant="48" id="INS-5l-YVF"/>
+                <constraint firstItem="Cyq-zQ-O3B" firstAttribute="bottom" secondItem="i5M-Pr-FkT" secondAttribute="bottom" constant="-16" id="Kxf-ap-Rgh"/>
+                <constraint firstItem="gqU-PP-mhe" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="LqF-UI-usb"/>
+                <constraint firstItem="fnl-2z-Ty3" firstAttribute="trailing" secondItem="00K-rt-TMy" secondAttribute="trailing" constant="16" id="MqX-eg-bba"/>
+                <constraint firstItem="gqU-PP-mhe" firstAttribute="trailing" secondItem="fnl-2z-Ty3" secondAttribute="trailing" constant="-16" id="RP5-zv-aV7"/>
+                <constraint firstItem="i1h-fF-Pva" firstAttribute="height" secondItem="i5M-Pr-FkT" secondAttribute="height" multiplier="0.418246" id="f02-Ja-83I"/>
+                <constraint firstItem="Cyq-zQ-O3B" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="m0x-ef-l1W"/>
+                <constraint firstItem="00K-rt-TMy" firstAttribute="leading" secondItem="fnl-2z-Ty3" secondAttribute="leading" constant="16" id="pxl-mv-lhE"/>
+            </constraints>
+            <point key="canvasLocation" x="10.769230769230768" y="20.616113744075829"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="contactUs_ic" width="76" height="76"/>
+        <image name="login_ic" width="396" height="353"/>
+        <image name="logo_ic" width="81" height="23"/>
+        <namedColor name="DarkBlue">
+            <color red="0.0" green="0.39599999785423279" blue="0.68999999761581421" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="DarkGray">
+            <color red="0.31799998879432678" green="0.31799998879432678" blue="0.31799998879432678" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <namedColor name="LightGray">
+            <color red="0.95686274509803915" green="0.96470588235294119" blue="0.97254901960784312" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        </namedColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

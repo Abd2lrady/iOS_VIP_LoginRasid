@@ -28,6 +28,18 @@
 		3C2C5642292F6CE900C316FB /* AuthGateway.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5641292F6CE900C316FB /* AuthGateway.swift */; };
 		3C2C5644292F6D6500C316FB /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5643292F6D6500C316FB /* LoginCredentials.swift */; };
 		3C2C5647292F6F5400C316FB /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5646292F6F5400C316FB /* AuthRepo.swift */; };
+		3C2C564B292F735E00C316FB /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5649292F735E00C316FB /* IntroViewController.swift */; };
+		3CC03D98292F89340081C325 /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03D97292F89340081C325 /* UIView+Design.swift */; };
+		3CC03D99292F8B250081C325 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC03D9B292F8B250081C325 /* IntroViewController.xib */; };
+		3CC03D9E292F8F220081C325 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5627292F517E00C316FB /* Cairo-Black.ttf */; };
+		3CC03D9F292F8F220081C325 /* Cairo-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5626292F517E00C316FB /* Cairo-Bold.ttf */; };
+		3CC03DA0292F8F220081C325 /* Cairo-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5628292F517E00C316FB /* Cairo-Light.ttf */; };
+		3CC03DA1292F8F220081C325 /* Cairo-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5624292F517D00C316FB /* Cairo-Medium.ttf */; };
+		3CC03DA2292F8F220081C325 /* Cairo-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5625292F517D00C316FB /* Cairo-Regular.ttf */; };
+		3CC03DA5292F93510081C325 /* IntroPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03DA4292F93510081C325 /* IntroPresenter.swift */; };
+		3CC03DA8292F941E0081C325 /* IntroInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03DA7292F941E0081C325 /* IntroInteractor.swift */; };
+		3CC03DAA292F94A70081C325 /* IntroRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03DA9292F94A70081C325 /* IntroRouter.swift */; };
+		3CC03DAE292F95840081C325 /* IntroConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03DAD292F95840081C325 /* IntroConfigurator.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -58,6 +70,15 @@
 		3C2C5641292F6CE900C316FB /* AuthGateway.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthGateway.swift; sourceTree = "<group>"; };
 		3C2C5643292F6D6500C316FB /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 		3C2C5646292F6F5400C316FB /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
+		3C2C5649292F735E00C316FB /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		3CC03D97292F89340081C325 /* UIView+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
+		3CC03D9A292F8B250081C325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IntroViewController.xib; sourceTree = "<group>"; };
+		3CC03D9C292F8B390081C325 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
+		3CC03D9D292F8B390081C325 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/IntroViewController.strings; sourceTree = "<group>"; };
+		3CC03DA4292F93510081C325 /* IntroPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroPresenter.swift; sourceTree = "<group>"; };
+		3CC03DA7292F941E0081C325 /* IntroInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroInteractor.swift; sourceTree = "<group>"; };
+		3CC03DA9292F94A70081C325 /* IntroRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroRouter.swift; sourceTree = "<group>"; };
+		3CC03DAD292F95840081C325 /* IntroConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroConfigurator.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -202,7 +223,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2C55F3292F465500C316FB /* ViewController.swift */,
-				3C2C563F292F691000C316FB /* Login */,
+				3C2C563F292F691000C316FB /* Intro */,
 			);
 			path = Modules;
 			sourceTree = "<group>";
@@ -210,6 +231,7 @@
 		3C2C5614292F4B5600C316FB /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				3CC03D97292F89340081C325 /* UIView+Design.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -265,11 +287,16 @@
 			path = Login;
 			sourceTree = "<group>";
 		};
-		3C2C563F292F691000C316FB /* Login */ = {
+		3C2C563F292F691000C316FB /* Intro */ = {
 			isa = PBXGroup;
 			children = (
+				3CC03DAC292F956D0081C325 /* Configurator */,
+				3CC03DAB292F95640081C325 /* Router */,
+				3CC03DA6292F94000081C325 /* Interactor */,
+				3CC03DA3292F933F0081C325 /* Presenter */,
+				3C2C5648292F734A00C316FB /* View */,
 			);
-			path = Login;
+			path = Intro;
 			sourceTree = "<group>";
 		};
 		3C2C5640292F6CCC00C316FB /* Repo */ = {
@@ -279,6 +306,47 @@
 				3C2C5646292F6F5400C316FB /* AuthRepo.swift */,
 			);
 			path = Repo;
+			sourceTree = "<group>";
+		};
+		3C2C5648292F734A00C316FB /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3C2C5649292F735E00C316FB /* IntroViewController.swift */,
+				3CC03D9B292F8B250081C325 /* IntroViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CC03DA3292F933F0081C325 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3CC03DA4292F93510081C325 /* IntroPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3CC03DA6292F94000081C325 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3CC03DA7292F941E0081C325 /* IntroInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3CC03DAB292F95640081C325 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3CC03DA9292F94A70081C325 /* IntroRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3CC03DAC292F956D0081C325 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				3CC03DAD292F95840081C325 /* IntroConfigurator.swift */,
+			);
+			path = Configurator;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -328,6 +396,7 @@
 			knownRegions = (
 				en,
 				Base,
+				ar,
 			);
 			mainGroup = 3C2C55E3292F465500C316FB;
 			packageReferences = (
@@ -347,6 +416,12 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3CC03D9E292F8F220081C325 /* Cairo-Black.ttf in Resources */,
+				3CC03D9F292F8F220081C325 /* Cairo-Bold.ttf in Resources */,
+				3CC03DA0292F8F220081C325 /* Cairo-Light.ttf in Resources */,
+				3CC03DA1292F8F220081C325 /* Cairo-Medium.ttf in Resources */,
+				3CC03DA2292F8F220081C325 /* Cairo-Regular.ttf in Resources */,
+				3CC03D99292F8B250081C325 /* IntroViewController.xib in Resources */,
 				3C2C55FC292F465500C316FB /* LaunchScreen.storyboard in Resources */,
 				3C2C561D292F4DF900C316FB /* Colors.xcassets in Resources */,
 				3C2C55F9292F465500C316FB /* Images.xcassets in Resources */,
@@ -401,21 +476,27 @@
 			buildActionMask = 2147483647;
 			files = (
 				3C2C563B292F65FC00C316FB /* UserEntity.swift in Sources */,
+				3CC03DAE292F95840081C325 /* IntroConfigurator.swift in Sources */,
 				3C2C5647292F6F5400C316FB /* AuthRepo.swift in Sources */,
 				3C2C5623292F50C400C316FB /* Fonts.swift in Sources */,
 				3C2C5638292F65C100C316FB /* ServerResponse.swift in Sources */,
+				3CC03D98292F89340081C325 /* UIView+Design.swift in Sources */,
 				3C2C55F4292F465500C316FB /* ViewController.swift in Sources */,
 				3C2C5642292F6CE900C316FB /* AuthGateway.swift in Sources */,
 				3C2C5621292F50AE00C316FB /* Images.swift in Sources */,
 				3C2C5644292F6D6500C316FB /* LoginCredentials.swift in Sources */,
 				3C2C562E292F544100C316FB /* AuthAPIRouter.swift in Sources */,
 				3C2C561F292F509C00C316FB /* Colors.swift in Sources */,
+				3CC03DA5292F93510081C325 /* IntroPresenter.swift in Sources */,
 				3C2C5633292F574100C316FB /* APIClient.swift in Sources */,
 				3C2C5630292F557100C316FB /* Constants.swift in Sources */,
 				3C2C5607292F489500C316FB /* SceneDelegate+Extension.swift in Sources */,
+				3CC03DAA292F94A70081C325 /* IntroRouter.swift in Sources */,
+				3C2C564B292F735E00C316FB /* IntroViewController.swift in Sources */,
 				3C2C55F0292F465500C316FB /* AppDelegate.swift in Sources */,
 				3C2C55F2292F465500C316FB /* SceneDelegate.swift in Sources */,
 				3C2C562C292F53E500C316FB /* APIRouterProtocol.swift in Sources */,
+				3CC03DA8292F941E0081C325 /* IntroInteractor.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -426,8 +507,18 @@
 			isa = PBXVariantGroup;
 			children = (
 				3C2C55FB292F465500C316FB /* Base */,
+				3CC03D9C292F8B390081C325 /* ar */,
 			);
 			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+		3CC03D9B292F8B250081C325 /* IntroViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CC03D9A292F8B250081C325 /* Base */,
+				3CC03D9D292F8B390081C325 /* ar */,
+			);
+			name = IntroViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
@@ -437,6 +528,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
@@ -497,6 +589,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
 				CLANG_ANALYZER_NONNULL = YES;
 				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
 				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
