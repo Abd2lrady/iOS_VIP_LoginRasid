@@ -1,0 +1,33 @@
+
+/* Class = "UITextField"; placeholder = "enter password"; ObjectID = "4kI-OM-eqz"; */
+"4kI-OM-eqz.placeholder" = "ادخل كلمة المرور";
+
+/* Class = "UILabel"; text = "Password"; ObjectID = "AiH-PB-kYr"; */
+"AiH-PB-kYr.text" = "كلمة المرور";
+
+/* Class = "UIButton"; normalTitle = "login"; ObjectID = "MN9-Wc-j01"; */
+"MN9-Wc-j01.normalTitle" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "تسجيل الدخول"; ObjectID = "ONM-kh-eRA"; */
+"ONM-kh-eRA.text" = "تسجيل الدخول";
+
+/* Class = "UILabel"; text = "you have no account"; ObjectID = "Qqo-Tb-gwU"; */
+"Qqo-Tb-gwU.text" = "ليس لدي حساب";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "S6F-W1-0BN"; */
+"S6F-W1-0BN.normalTitle" = "انشاء حساب جديد";
+
+/* Class = "UITextField"; placeholder = "enter user name"; ObjectID = "SUF-qr-QRs"; */
+"SUF-qr-QRs.placeholder" = "ادخل اسم المستخدم";
+
+/* Class = "UIButton"; normalTitle = "forgetPassword?"; ObjectID = "eSu-sP-HHI"; */
+"eSu-sP-HHI.normalTitle" = "هل نسيت كلمة المرور؟";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "fKl-O9-ZCA"; */
+"fKl-O9-ZCA.normalTitle" = "Button";
+
+/* Class = "UIButton"; normalTitle = "Button"; ObjectID = "ibx-AD-SCn"; */
+"ibx-AD-SCn.normalTitle" = "Button";
+
+/* Class = "UILabel"; text = "User Name"; ObjectID = "xzO-BW-D4e"; */
+"xzO-BW-D4e.text" = "اسم المستخدم";

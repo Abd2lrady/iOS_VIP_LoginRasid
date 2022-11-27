@@ -7,13 +7,18 @@
 
 import Foundation
 
-protocol ContactUsInteractorProtocol { }
-protocol ContactUsDataStore { }
+protocol ContactUsInteractorProtocol {
+    func interact(request: ContanctUsModel.Request)
+}
+protocol ContactUsDataStore {
+    var messageTypes: [MessageTypesEntity] { get }
+}
 
 class ContactUsInteractor {
     
     let presenter: ContactUsPresenterProtocol
     let repo: AuthGateway
+    var messageTypes = [MessageTypesEntity]()
     
     init(presenter: ContactUsPresenterProtocol, repo: AuthGateway) {
         self.presenter = presenter
@@ -22,4 +27,37 @@ class ContactUsInteractor {
     
 }
 
-extension ContactUsInteractor: ContactUsInteractorProtocol, ContactUsDataStore { }
+extension ContactUsInteractor: ContactUsInteractorProtocol, ContactUsDataStore {
+    func interact(request: ContanctUsModel.Request) {
+        switch request {
+        case .send(let form):
+            sendForm(formBody: form)
+        case .viewLoaded:
+            getMessageTypes()
+        }
+    }
+    
+    func sendForm(formBody: ContanctUsModel.ContactUsForm) {
+        repo.sendContactUsForm(form: formBody) { result in
+            switch result {
+            case .success(let success):
+                print(success)
+            case .failure(let failure):
+                print(failure)
+            }
+        }
+    }
+    
+    func getMessageTypes() {
+        repo.getMessageTypes { [weak self] result in
+            switch result {
+            case .success(let response):
+                guard let types = response.data else { return }
+                self?.messageTypes = types
+                self?.presenter.present(response: ContanctUsModel.Response.messageType(types))
+            case .failure(let error):
+                print(error)
+            }
+        }
+    }
+}

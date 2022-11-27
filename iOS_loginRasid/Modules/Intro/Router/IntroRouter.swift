@@ -29,7 +29,7 @@ class IntroRouter {
 extension IntroRouter: IntroRouterProtocol {
     
     func loginTapped() {
-        print("route login")
+        navToLogin()
     }
     
     func contactUsTapped() {
@@ -50,5 +50,14 @@ extension IntroRouter: IntroRouterProtocol {
         navigator.pushViewController(view,
                                      animated: true)
     }
-
+    
+     private func navToLogin() {
+        
+         guard let navigator = (view as? IntroViewController)?.navigationController
+         else { return }
+         
+         let view = LoginConfigurator.configure()
+         navigator.pushViewController(view,
+                                      animated: true)
+    }
 }

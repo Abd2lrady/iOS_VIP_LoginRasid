@@ -11,6 +11,7 @@ enum Constants {
     enum API {
         enum Rasid {
             static let baseURL = "jackdashapi-develope.fintechrsa.com"
+
         }
     }
 }

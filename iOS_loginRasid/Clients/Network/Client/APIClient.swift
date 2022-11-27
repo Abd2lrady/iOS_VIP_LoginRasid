@@ -15,7 +15,7 @@ enum APIError: Error {
     case unauthorized
     case genericError(Int)
 }
-
+// swiftlint: disable all
 class APIClient {
     
     static let shared = APIClient()
@@ -28,12 +28,14 @@ class APIClient {
         
         guard let url = try? endpoint.asURLRequest() else { fatalError("can`t get url") }
         AF.request(url).responseData { response in
-            
+            debugPrint(response)
+//            debugPrint(String(data: response.value!, encoding: .utf8))
             guard let statusCode = response.response?.statusCode
             else {
                 completionHandler(.failure(APIError.noStatusCode))
                 return
             }
+        
             switch response.result {
             case .success(let data):
                 do {
@@ -47,4 +49,5 @@ class APIClient {
             }
         }
     }
+    
 }

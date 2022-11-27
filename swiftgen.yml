@@ -24,11 +24,11 @@ fonts:
         params:
             enumName: Fonts
          
-#strings:
-#  - inputs: Strings/en.lproj/Localizable.strings
-#    outputs:
-#        templateName: structured-swift4
-#        output: Strings/Strings.swift
-#        params:
-#            enumName: Strings
+strings:
+  - inputs: Strings/en.lproj/Localizable.strings
+    outputs:
+        templateName: structured-swift4
+        output: Strings/Strings.swift
+        params:
+            enumName: Strings
             

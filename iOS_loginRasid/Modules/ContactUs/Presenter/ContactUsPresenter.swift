@@ -7,7 +7,9 @@
 
 import Foundation
 
-protocol ContactUsPresenterProtocol { }
+protocol ContactUsPresenterProtocol {
+    func present(response: ContanctUsModel.Response)
+}
 
 class ContactUsPresenter {
     weak var view: ContactUsViewControllerProtocol?
@@ -17,4 +19,16 @@ class ContactUsPresenter {
     }
 }
 
-extension ContactUsPresenter: ContactUsPresenterProtocol { }
+extension ContactUsPresenter: ContactUsPresenterProtocol {
+    func present(response: ContanctUsModel.Response) {
+        switch response {
+        case .messageType(let messageTypes):
+            
+            let viewModels = messageTypes.map { entity in
+                entity.name
+            }
+            view?.show(messageTypes: viewModels)
+        }
+    }
+    
+}

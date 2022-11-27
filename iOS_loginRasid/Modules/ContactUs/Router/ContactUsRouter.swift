@@ -10,6 +10,7 @@ import Foundation
 protocol ContactUsRouterProtocol {
     func sendMessageTapped()
     func backButtonTapped()
+    func getMessageTypeId(for row: Int) -> Int
 }
 
 class ContactUsRouter {
@@ -21,6 +22,10 @@ class ContactUsRouter {
          dataStore: ContactUsDataStore) {
         self.view = view
         self.dataStore = dataStore
+    }
+    
+    func getMessageTypeId(for row: Int) -> Int {
+        dataStore.messageTypes[row].id
     }
     
 }

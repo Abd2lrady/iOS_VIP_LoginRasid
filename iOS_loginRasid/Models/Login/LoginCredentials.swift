@@ -11,7 +11,7 @@ struct LoginCredentials {
     let username: String
     let password: String
     
-    func getparams() -> [String: String] {
+    func getParams() -> [String: String] {
         return ["username": username, "password": password]
     }
     

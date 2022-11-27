@@ -46,6 +46,20 @@
 		3CC03DC1292FB4190081C325 /* ContactUsInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03DC0292FB4190081C325 /* ContactUsInteractor.swift */; };
 		3CC03DC4292FB4600081C325 /* ContactUsRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03DC3292FB4600081C325 /* ContactUsRouter.swift */; };
 		3CC03DC7292FB69F0081C325 /* ContactUsConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03DC6292FB69F0081C325 /* ContactUsConfigurator.swift */; };
+		3CC904CD293337D0006A25C3 /* ContactUsModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904CC293337D0006A25C3 /* ContactUsModel.swift */; };
+		3CC904D029333CEA006A25C3 /* ContactUsAPIRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904CF29333CEA006A25C3 /* ContactUsAPIRouter.swift */; };
+		3CC904D3293341D8006A25C3 /* ContactUsEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904D2293341D8006A25C3 /* ContactUsEntity.swift */; };
+		3CC904D629334C53006A25C3 /* Localizable.strings in Resources */ = {isa = PBXBuildFile; fileRef = 3CC904D829334C53006A25C3 /* Localizable.strings */; };
+		3CC904DB29334D00006A25C3 /* Strings.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904DA29334D00006A25C3 /* Strings.swift */; };
+		3CC904DE29334E5F006A25C3 /* String+localization.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904DD29334E5F006A25C3 /* String+localization.swift */; };
+		3CC904E329337007006A25C3 /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904E129337007006A25C3 /* LoginViewController.swift */; };
+		3CC904E529337E87006A25C3 /* LoginViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC904E729337E87006A25C3 /* LoginViewController.xib */; };
+		3CC904EC29338482006A25C3 /* LoginModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904EB29338482006A25C3 /* LoginModel.swift */; };
+		3CC904EF29338544006A25C3 /* LoginRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904EE29338544006A25C3 /* LoginRouter.swift */; };
+		3CC904F229338637006A25C3 /* LoginInteractor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904F129338637006A25C3 /* LoginInteractor.swift */; };
+		3CC904F5293387C5006A25C3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904F4293387C5006A25C3 /* LoginPresenter.swift */; };
+		3CC904F829338883006A25C3 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904F729338883006A25C3 /* LoginConfigurator.swift */; };
+		3CC904FA29338F6A006A25C3 /* MessageTypesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904F929338F6A006A25C3 /* MessageTypesEntity.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -92,6 +106,22 @@
 		3CC03DC0292FB4190081C325 /* ContactUsInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsInteractor.swift; sourceTree = "<group>"; };
 		3CC03DC3292FB4600081C325 /* ContactUsRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsRouter.swift; sourceTree = "<group>"; };
 		3CC03DC6292FB69F0081C325 /* ContactUsConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsConfigurator.swift; sourceTree = "<group>"; };
+		3CC904CC293337D0006A25C3 /* ContactUsModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsModel.swift; sourceTree = "<group>"; };
+		3CC904CF29333CEA006A25C3 /* ContactUsAPIRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsAPIRouter.swift; sourceTree = "<group>"; };
+		3CC904D2293341D8006A25C3 /* ContactUsEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactUsEntity.swift; sourceTree = "<group>"; };
+		3CC904D929334C55006A25C3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3CC904DA29334D00006A25C3 /* Strings.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Strings.swift; sourceTree = "<group>"; };
+		3CC904DC29334DAE006A25C3 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizable.strings; sourceTree = "<group>"; };
+		3CC904DD29334E5F006A25C3 /* String+localization.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+localization.swift"; sourceTree = "<group>"; };
+		3CC904E129337007006A25C3 /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		3CC904E629337E87006A25C3 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/LoginViewController.xib; sourceTree = "<group>"; };
+		3CC904E929337E89006A25C3 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LoginViewController.strings; sourceTree = "<group>"; };
+		3CC904EB29338482006A25C3 /* LoginModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginModel.swift; sourceTree = "<group>"; };
+		3CC904EE29338544006A25C3 /* LoginRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRouter.swift; sourceTree = "<group>"; };
+		3CC904F129338637006A25C3 /* LoginInteractor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginInteractor.swift; sourceTree = "<group>"; };
+		3CC904F4293387C5006A25C3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
+		3CC904F729338883006A25C3 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
+		3CC904F929338F6A006A25C3 /* MessageTypesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTypesEntity.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -235,6 +265,8 @@
 		3C2C5613292F4B2F00C316FB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3CC904EA2933846D006A25C3 /* Models */,
+				3CC904DF29336FE8006A25C3 /* Login */,
 				3C2C55F3292F465500C316FB /* ViewController.swift */,
 				3CC03DB1292F9F220081C325 /* ContactUs */,
 				3C2C563F292F691000C316FB /* Intro */,
@@ -246,6 +278,7 @@
 			isa = PBXGroup;
 			children = (
 				3CC03D97292F89340081C325 /* UIView+Design.swift */,
+				3CC904DD29334E5F006A25C3 /* String+localization.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -253,6 +286,8 @@
 		3C2C561B292F4DCC00C316FB /* Strings */ = {
 			isa = PBXGroup;
 			children = (
+				3CC904DA29334D00006A25C3 /* Strings.swift */,
+				3CC904D829334C53006A25C3 /* Localizable.strings */,
 			);
 			path = Strings;
 			sourceTree = "<group>";
@@ -271,6 +306,7 @@
 			children = (
 				3C2C562B292F53E500C316FB /* APIRouterProtocol.swift */,
 				3C2C562D292F544100C316FB /* AuthAPIRouter.swift */,
+				3CC904CF29333CEA006A25C3 /* ContactUsAPIRouter.swift */,
 			);
 			path = APIRouter;
 			sourceTree = "<group>";
@@ -286,6 +322,7 @@
 		3C2C5636292F659300C316FB /* Models */ = {
 			isa = PBXGroup;
 			children = (
+				3CC904D1293341BD006A25C3 /* ContactUs */,
 				3C2C5639292F65E100C316FB /* Login */,
 				3C2C5637292F65C100C316FB /* ServerResponse.swift */,
 			);
@@ -366,6 +403,7 @@
 		3CC03DB1292F9F220081C325 /* ContactUs */ = {
 			isa = PBXGroup;
 			children = (
+				3CC904CB293337B0006A25C3 /* Models */,
 				3CC03DC5292FB67F0081C325 /* Configurator */,
 				3CC03DC2292FB4540081C325 /* Router */,
 				3CC03DBD292FB3B50081C325 /* Presenter */,
@@ -412,6 +450,84 @@
 			isa = PBXGroup;
 			children = (
 				3CC03DC6292FB69F0081C325 /* ContactUsConfigurator.swift */,
+			);
+			path = Configurator;
+			sourceTree = "<group>";
+		};
+		3CC904CB293337B0006A25C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904CC293337D0006A25C3 /* ContactUsModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CC904D1293341BD006A25C3 /* ContactUs */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904D2293341D8006A25C3 /* ContactUsEntity.swift */,
+				3CC904F929338F6A006A25C3 /* MessageTypesEntity.swift */,
+			);
+			path = ContactUs;
+			sourceTree = "<group>";
+		};
+		3CC904DF29336FE8006A25C3 /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904F629338870006A25C3 /* Configurator */,
+				3CC904F3293387B4006A25C3 /* Presenter */,
+				3CC904F029338625006A25C3 /* Interactor */,
+				3CC904ED29338534006A25C3 /* Router */,
+				3CC904E029336FF0006A25C3 /* View */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		3CC904E029336FF0006A25C3 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904E129337007006A25C3 /* LoginViewController.swift */,
+				3CC904E729337E87006A25C3 /* LoginViewController.xib */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		3CC904EA2933846D006A25C3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904EB29338482006A25C3 /* LoginModel.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		3CC904ED29338534006A25C3 /* Router */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904EE29338544006A25C3 /* LoginRouter.swift */,
+			);
+			path = Router;
+			sourceTree = "<group>";
+		};
+		3CC904F029338625006A25C3 /* Interactor */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904F129338637006A25C3 /* LoginInteractor.swift */,
+			);
+			path = Interactor;
+			sourceTree = "<group>";
+		};
+		3CC904F3293387B4006A25C3 /* Presenter */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904F4293387C5006A25C3 /* LoginPresenter.swift */,
+			);
+			path = Presenter;
+			sourceTree = "<group>";
+		};
+		3CC904F629338870006A25C3 /* Configurator */ = {
+			isa = PBXGroup;
+			children = (
+				3CC904F729338883006A25C3 /* LoginConfigurator.swift */,
 			);
 			path = Configurator;
 			sourceTree = "<group>";
@@ -484,6 +600,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3CC03D9E292F8F220081C325 /* Cairo-Black.ttf in Resources */,
+				3CC904D629334C53006A25C3 /* Localizable.strings in Resources */,
 				3CC03D9F292F8F220081C325 /* Cairo-Bold.ttf in Resources */,
 				3CC03DA0292F8F220081C325 /* Cairo-Light.ttf in Resources */,
 				3CC03DA1292F8F220081C325 /* Cairo-Medium.ttf in Resources */,
@@ -491,6 +608,7 @@
 				3CC03DB7292FB0C00081C325 /* ContactUsViewController.xib in Resources */,
 				3CC03D99292F8B250081C325 /* IntroViewController.xib in Resources */,
 				3C2C55FC292F465500C316FB /* LaunchScreen.storyboard in Resources */,
+				3CC904E529337E87006A25C3 /* LoginViewController.xib in Resources */,
 				3C2C561D292F4DF900C316FB /* Colors.xcassets in Resources */,
 				3C2C55F9292F465500C316FB /* Images.xcassets in Resources */,
 				3C2C561A292F4D6200C316FB /* swiftgen.yml in Resources */,
@@ -545,31 +663,43 @@
 			files = (
 				3C2C563B292F65FC00C316FB /* UserEntity.swift in Sources */,
 				3CC03DAE292F95840081C325 /* IntroConfigurator.swift in Sources */,
+				3CC904F829338883006A25C3 /* LoginConfigurator.swift in Sources */,
 				3C2C5647292F6F5400C316FB /* AuthRepo.swift in Sources */,
+				3CC904D029333CEA006A25C3 /* ContactUsAPIRouter.swift in Sources */,
 				3C2C5623292F50C400C316FB /* Fonts.swift in Sources */,
 				3C2C5638292F65C100C316FB /* ServerResponse.swift in Sources */,
 				3CC03D98292F89340081C325 /* UIView+Design.swift in Sources */,
 				3C2C55F4292F465500C316FB /* ViewController.swift in Sources */,
+				3CC904F229338637006A25C3 /* LoginInteractor.swift in Sources */,
 				3C2C5642292F6CE900C316FB /* AuthGateway.swift in Sources */,
 				3C2C5621292F50AE00C316FB /* Images.swift in Sources */,
 				3C2C5644292F6D6500C316FB /* LoginCredentials.swift in Sources */,
+				3CC904DB29334D00006A25C3 /* Strings.swift in Sources */,
 				3C2C562E292F544100C316FB /* AuthAPIRouter.swift in Sources */,
 				3C2C561F292F509C00C316FB /* Colors.swift in Sources */,
 				3CC03DB4292F9F410081C325 /* ContactUsViewController.swift in Sources */,
 				3CC03DA5292F93510081C325 /* IntroPresenter.swift in Sources */,
 				3C2C5633292F574100C316FB /* APIClient.swift in Sources */,
 				3C2C5630292F557100C316FB /* Constants.swift in Sources */,
+				3CC904CD293337D0006A25C3 /* ContactUsModel.swift in Sources */,
 				3C2C5607292F489500C316FB /* SceneDelegate+Extension.swift in Sources */,
 				3CC03DC7292FB69F0081C325 /* ContactUsConfigurator.swift in Sources */,
+				3CC904FA29338F6A006A25C3 /* MessageTypesEntity.swift in Sources */,
+				3CC904E329337007006A25C3 /* LoginViewController.swift in Sources */,
 				3CC03DAA292F94A70081C325 /* IntroRouter.swift in Sources */,
 				3C2C564B292F735E00C316FB /* IntroViewController.swift in Sources */,
 				3C2C55F0292F465500C316FB /* AppDelegate.swift in Sources */,
+				3CC904EC29338482006A25C3 /* LoginModel.swift in Sources */,
 				3CC03DC1292FB4190081C325 /* ContactUsInteractor.swift in Sources */,
 				3C2C55F2292F465500C316FB /* SceneDelegate.swift in Sources */,
+				3CC904D3293341D8006A25C3 /* ContactUsEntity.swift in Sources */,
 				3C2C562C292F53E500C316FB /* APIRouterProtocol.swift in Sources */,
 				3CC03DC4292FB4600081C325 /* ContactUsRouter.swift in Sources */,
 				3CC03DA8292F941E0081C325 /* IntroInteractor.swift in Sources */,
 				3CC03DBF292FB3CB0081C325 /* ContactUsPresenter.swift in Sources */,
+				3CC904F5293387C5006A25C3 /* LoginPresenter.swift in Sources */,
+				3CC904EF29338544006A25C3 /* LoginRouter.swift in Sources */,
+				3CC904DE29334E5F006A25C3 /* String+localization.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -601,6 +731,24 @@
 				3CC03DBB292FB0C20081C325 /* ar */,
 			);
 			name = ContactUsViewController.xib;
+			sourceTree = "<group>";
+		};
+		3CC904D829334C53006A25C3 /* Localizable.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CC904D929334C55006A25C3 /* ar */,
+				3CC904DC29334DAE006A25C3 /* en */,
+			);
+			name = Localizable.strings;
+			sourceTree = "<group>";
+		};
+		3CC904E729337E87006A25C3 /* LoginViewController.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				3CC904E629337E87006A25C3 /* Base */,
+				3CC904E929337E89006A25C3 /* ar */,
+			);
+			name = LoginViewController.xib;
 			sourceTree = "<group>";
 		};
 /* End PBXVariantGroup section */
