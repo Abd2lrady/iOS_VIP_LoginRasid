@@ -9,6 +9,7 @@ import Foundation
 
 protocol ContactUsInteractorProtocol {
     func interact(request: ContanctUsModel.Request)
+    func getMessageTypeId(for row: Int) -> Int?
 }
 protocol ContactUsDataStore {
     var messageTypes: [MessageTypesEntity] { get }
@@ -28,6 +29,13 @@ class ContactUsInteractor {
 }
 
 extension ContactUsInteractor: ContactUsInteractorProtocol, ContactUsDataStore {
+    func getMessageTypeId(for row: Int) -> Int? {
+        if !messageTypes.isEmpty {
+            return messageTypes[row].id
+        }
+        return nil
+    }
+    
     func interact(request: ContanctUsModel.Request) {
         switch request {
         case .send(let form):

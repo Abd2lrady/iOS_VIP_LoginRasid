@@ -10,7 +10,7 @@ import Foundation
 enum Constants {
     enum API {
         enum Rasid {
-            static let baseURL = "jackdashapi-develope.fintechrsa.com"
+            static let baseURL = "https://jackdashapi-develope.fintechrsa.com/api/vendor"
 
         }
     }

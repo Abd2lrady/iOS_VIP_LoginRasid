@@ -22,20 +22,27 @@ class APIClient {
     
     private init() {}
     
-    func request<ResponseType: Codable>(for endpoint: APIRouterProtocolAndConvertible,
+    let interceptor = AuthInterceptor(authToken: "",
+                                      retryLimit: 3,
+                                      retryStatusCodes: 400..<500)
+    
+    func request<ResponseType: Codable>(for endpoint: URlRequestConvertable,
                                         responseType: ResponseType.Type,
                                         completionHandler: @escaping (Result<ResponseType, Error>) -> Void ) {
         
         guard let url = try? endpoint.asURLRequest() else { fatalError("can`t get url") }
-        AF.request(url).responseData { response in
+        
+        
+        AF.request(url, interceptor: interceptor)
+            .validate()
+            .responseData { response in
             debugPrint(response)
-//            debugPrint(String(data: response.value!, encoding: .utf8))
             guard let statusCode = response.response?.statusCode
             else {
                 completionHandler(.failure(APIError.noStatusCode))
                 return
             }
-        
+
             switch response.result {
             case .success(let data):
                 do {

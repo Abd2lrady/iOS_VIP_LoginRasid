@@ -60,6 +60,9 @@
 		3CC904F5293387C5006A25C3 /* LoginPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904F4293387C5006A25C3 /* LoginPresenter.swift */; };
 		3CC904F829338883006A25C3 /* LoginConfigurator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904F729338883006A25C3 /* LoginConfigurator.swift */; };
 		3CC904FA29338F6A006A25C3 /* MessageTypesEntity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC904F929338F6A006A25C3 /* MessageTypesEntity.swift */; };
+		3CFA0E812934A26A00969E47 /* URLRequestConvertible+Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA0E802934A26A00969E47 /* URLRequestConvertible+Extension.swift */; };
+		3CFA0E832934A3EA00969E47 /* URLRequestCon.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA0E822934A3EA00969E47 /* URLRequestCon.swift */; };
+		3CFA0E862934C03300969E47 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA0E852934C03300969E47 /* Interceptor.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -122,6 +125,9 @@
 		3CC904F4293387C5006A25C3 /* LoginPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginPresenter.swift; sourceTree = "<group>"; };
 		3CC904F729338883006A25C3 /* LoginConfigurator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginConfigurator.swift; sourceTree = "<group>"; };
 		3CC904F929338F6A006A25C3 /* MessageTypesEntity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageTypesEntity.swift; sourceTree = "<group>"; };
+		3CFA0E802934A26A00969E47 /* URLRequestConvertible+Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequestConvertible+Extension.swift"; sourceTree = "<group>"; };
+		3CFA0E822934A3EA00969E47 /* URLRequestCon.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLRequestCon.swift; sourceTree = "<group>"; };
+		3CFA0E852934C03300969E47 /* Interceptor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Interceptor.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -265,9 +271,9 @@
 		3C2C5613292F4B2F00C316FB /* Modules */ = {
 			isa = PBXGroup;
 			children = (
+				3C2C55F3292F465500C316FB /* ViewController.swift */,
 				3CC904EA2933846D006A25C3 /* Models */,
 				3CC904DF29336FE8006A25C3 /* Login */,
-				3C2C55F3292F465500C316FB /* ViewController.swift */,
 				3CC03DB1292F9F220081C325 /* ContactUs */,
 				3C2C563F292F691000C316FB /* Intro */,
 			);
@@ -295,6 +301,7 @@
 		3C2C5629292F53C400C316FB /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				3CFA0E842934C02200969E47 /* Interceptor */,
 				3C2C562A292F53CB00C316FB /* APIRouter */,
 				3C2C5631292F570800C316FB /* Client */,
 			);
@@ -307,6 +314,8 @@
 				3C2C562B292F53E500C316FB /* APIRouterProtocol.swift */,
 				3C2C562D292F544100C316FB /* AuthAPIRouter.swift */,
 				3CC904CF29333CEA006A25C3 /* ContactUsAPIRouter.swift */,
+				3CFA0E802934A26A00969E47 /* URLRequestConvertible+Extension.swift */,
+				3CFA0E822934A3EA00969E47 /* URLRequestCon.swift */,
 			);
 			path = APIRouter;
 			sourceTree = "<group>";
@@ -532,6 +541,14 @@
 			path = Configurator;
 			sourceTree = "<group>";
 		};
+		3CFA0E842934C02200969E47 /* Interceptor */ = {
+			isa = PBXGroup;
+			children = (
+				3CFA0E852934C03300969E47 /* Interceptor.swift */,
+			);
+			path = Interceptor;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -664,6 +681,7 @@
 				3C2C563B292F65FC00C316FB /* UserEntity.swift in Sources */,
 				3CC03DAE292F95840081C325 /* IntroConfigurator.swift in Sources */,
 				3CC904F829338883006A25C3 /* LoginConfigurator.swift in Sources */,
+				3CFA0E832934A3EA00969E47 /* URLRequestCon.swift in Sources */,
 				3C2C5647292F6F5400C316FB /* AuthRepo.swift in Sources */,
 				3CC904D029333CEA006A25C3 /* ContactUsAPIRouter.swift in Sources */,
 				3C2C5623292F50C400C316FB /* Fonts.swift in Sources */,
@@ -678,6 +696,7 @@
 				3C2C562E292F544100C316FB /* AuthAPIRouter.swift in Sources */,
 				3C2C561F292F509C00C316FB /* Colors.swift in Sources */,
 				3CC03DB4292F9F410081C325 /* ContactUsViewController.swift in Sources */,
+				3CFA0E812934A26A00969E47 /* URLRequestConvertible+Extension.swift in Sources */,
 				3CC03DA5292F93510081C325 /* IntroPresenter.swift in Sources */,
 				3C2C5633292F574100C316FB /* APIClient.swift in Sources */,
 				3C2C5630292F557100C316FB /* Constants.swift in Sources */,
@@ -690,6 +709,7 @@
 				3C2C564B292F735E00C316FB /* IntroViewController.swift in Sources */,
 				3C2C55F0292F465500C316FB /* AppDelegate.swift in Sources */,
 				3CC904EC29338482006A25C3 /* LoginModel.swift in Sources */,
+				3CFA0E862934C03300969E47 /* Interceptor.swift in Sources */,
 				3CC03DC1292FB4190081C325 /* ContactUsInteractor.swift in Sources */,
 				3C2C55F2292F465500C316FB /* SceneDelegate.swift in Sources */,
 				3CC904D3293341D8006A25C3 /* ContactUsEntity.swift in Sources */,

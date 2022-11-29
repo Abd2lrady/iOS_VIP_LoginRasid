@@ -61,7 +61,7 @@ class ContactUsViewController: UIViewController {
               let email = emailTextField.text
         else { return }
         
-        let messageTypeId = router?.getMessageTypeId(for: selectedMessageRow)
+        let messageTypeId = interactor?.getMessageTypeId(for: selectedMessageRow)
         let form = ContanctUsModel.ContactUsForm(customerName: name,
                                                  phoneNumber: phone,
                                                  messageType: messageTypeId ?? 0,
@@ -106,6 +106,6 @@ extension ContactUsViewController: UIPickerViewDataSource, UIPickerViewDelegate 
                     inComponent component: Int) {
         messageTypeTextField.resignFirstResponder()
         selectedMessageRow = row
-        messageTypeTextField.text = messageTypes[row].localize
+        messageTypeTextField.text = messageTypes[row].localize // "Sample Message Type"
     }
 }
