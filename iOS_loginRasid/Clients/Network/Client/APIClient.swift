@@ -36,12 +36,12 @@ class APIClient {
                                         completionHandler: @escaping (Result<ResponseType, Error>) -> Void ) {
         
         guard let url = try? endpoint.asURLRequest() else { fatalError("can`t get url") }
-        
+
         session.request(url, interceptor: interceptor)
             .validate()
             .responseData { response in
             debugPrint(response)
-            guard let statusCode = response.response?.statusCode
+            guard response.response?.statusCode != nil
             else {
                 completionHandler(.failure(APIError.noStatusCode))
                 return

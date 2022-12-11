@@ -700,6 +700,7 @@
 /* Begin PBXShellScriptBuildPhase section */
 		3C2C5617292F4CDA00C316FB /* SwiftLint */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);
@@ -718,6 +719,7 @@
 		};
 		3C2C5618292F4CE700C316FB /* SwiftGen */ = {
 			isa = PBXShellScriptBuildPhase;
+			alwaysOutOfDate = 1;
 			buildActionMask = 2147483647;
 			files = (
 			);

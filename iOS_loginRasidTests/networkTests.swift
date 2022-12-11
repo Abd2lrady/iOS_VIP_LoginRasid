@@ -63,48 +63,13 @@ class NetworkManagerTest: XCTestCase {
                 
         let response = HTTPURLResponse(url: dummyURL,
                                        statusCode: 200, httpVersion: nil, headerFields: nil)
-        let data = """
+        let json = """
                     {
                         "status": true,
                         "message": "تم تسجيل الدخول بنجاح",
-                        "data": {
-                            "id": 214,
-                            "name": "محمد السيد محمد محمد",
-                            "email": "Mohamed@mail.com",
-                            "image": "https://jackdashapi-develope.fintechrsa.com/images/avatar.png",
-                            "country_code": "966",
-                            "phone": "0503489894",
-                            "whatsapp": null,
-                            "is_date_hijri": false,
-                            "permissions": [
-                                {
-                                    "global": "*"
-                                }
-                            ],
-                            "user_type": "vendor",
-                            "identity_number": "1123456789",
-                            "created_at": "27 نوفمبر 2022",
-                            "is_ban": false,
-                            "ban_reason": null,
-                            "token": "1074|3d8OS4wBJTFg1MLZXfFAsRqHGeM8nCaS0lg5yPwP",
-                            "facility": {
-                                "id": 8,
-                                "name": "القصيم",
-                                "image": "https://jackdashapi-develope.fintechrsa.com/images/avatar.png",
-                                "profit_rate": 0,
-                                "discount_rate": 0,
-                                "transfer_financial": "أتوماتيك",
-                                "is_owner": true,
-                                "account_type": {
-                                    "key": "commercial_record",
-                                    "trans": "vendor.facility.account_types.commercial_record"
-                                }
-                            },
-                            "settlement_transformation": "أتوماتيك"
-                        }
                     }
                     """
-        let remoteData = RequestResultStub(data: data.data(using: .utf8), response: response, error: nil)
+        let remoteData = RequestResultStub(data: json.data(using: .utf8), response: response, error: nil)
         
         URLProtocolStub.stub = remoteData
         
@@ -165,6 +130,7 @@ class URLProtocolStub: URLProtocol {
         
         if let response = stub.response {
             client?.urlProtocol(self, didReceive: response, cacheStoragePolicy: .notAllowed)
+            print(response)
         }
         
         if let error = stub.error {
