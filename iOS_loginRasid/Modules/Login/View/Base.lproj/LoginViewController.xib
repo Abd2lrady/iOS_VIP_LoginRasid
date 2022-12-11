@@ -41,7 +41,7 @@
                             <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                             <nil key="highlightedColor"/>
                         </label>
-                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginpass_ic" translatesAutoresizingMaskIntoConstraints="NO" id="IP6-DS-hST">
+                        <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFill" semanticContentAttribute="forceLeftToRight" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="loginpass_ic" translatesAutoresizingMaskIntoConstraints="NO" id="IP6-DS-hST">
                             <rect key="frame" x="24" y="0.0" width="136" height="105"/>
                             <constraints>
                                 <constraint firstAttribute="width" constant="136" id="TJB-CA-JyQ"/>

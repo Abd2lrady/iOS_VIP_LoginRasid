@@ -29,6 +29,8 @@
 		3C2C5644292F6D6500C316FB /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5643292F6D6500C316FB /* LoginCredentials.swift */; };
 		3C2C5647292F6F5400C316FB /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5646292F6F5400C316FB /* AuthRepo.swift */; };
 		3C2C564B292F735E00C316FB /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5649292F735E00C316FB /* IntroViewController.swift */; };
+		3CBBC67B2945F79C0074C2FD /* iOS_loginRasidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBC67A2945F79C0074C2FD /* iOS_loginRasidTests.swift */; };
+		3CBBC6822945F7EB0074C2FD /* networkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBC6812945F7EB0074C2FD /* networkTests.swift */; };
 		3CC03D98292F89340081C325 /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03D97292F89340081C325 /* UIView+Design.swift */; };
 		3CC03D99292F8B250081C325 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC03D9B292F8B250081C325 /* IntroViewController.xib */; };
 		3CC03D9E292F8F220081C325 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5627292F517E00C316FB /* Cairo-Black.ttf */; };
@@ -65,6 +67,16 @@
 		3CFA0E862934C03300969E47 /* Interceptor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CFA0E852934C03300969E47 /* Interceptor.swift */; };
 /* End PBXBuildFile section */
 
+/* Begin PBXContainerItemProxy section */
+		3CBBC67C2945F79C0074C2FD /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = 3C2C55E4292F465500C316FB /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = 3C2C55EB292F465500C316FB;
+			remoteInfo = iOS_loginRasid;
+		};
+/* End PBXContainerItemProxy section */
+
 /* Begin PBXFileReference section */
 		3C2C55EC292F465500C316FB /* iOS_loginRasid.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = iOS_loginRasid.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		3C2C55EF292F465500C316FB /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -94,6 +106,9 @@
 		3C2C5643292F6D6500C316FB /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 		3C2C5646292F6F5400C316FB /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
 		3C2C5649292F735E00C316FB /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		3CBBC6782945F79B0074C2FD /* iOS_loginRasidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_loginRasidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		3CBBC67A2945F79C0074C2FD /* iOS_loginRasidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_loginRasidTests.swift; sourceTree = "<group>"; };
+		3CBBC6812945F7EB0074C2FD /* networkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkTests.swift; sourceTree = "<group>"; };
 		3CC03D97292F89340081C325 /* UIView+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
 		3CC03D9A292F8B250081C325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IntroViewController.xib; sourceTree = "<group>"; };
 		3CC03D9C292F8B390081C325 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -139,6 +154,13 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CBBC6752945F79B0074C2FD /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -147,6 +169,7 @@
 			children = (
 				3C2C5619292F4D6200C316FB /* swiftgen.yml */,
 				3C2C55EE292F465500C316FB /* iOS_loginRasid */,
+				3CBBC6792945F79C0074C2FD /* iOS_loginRasidTests */,
 				3C2C55ED292F465500C316FB /* Products */,
 			);
 			sourceTree = "<group>";
@@ -155,6 +178,7 @@
 			isa = PBXGroup;
 			children = (
 				3C2C55EC292F465500C316FB /* iOS_loginRasid.app */,
+				3CBBC6782945F79B0074C2FD /* iOS_loginRasidTests.xctest */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -377,6 +401,15 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3CBBC6792945F79C0074C2FD /* iOS_loginRasidTests */ = {
+			isa = PBXGroup;
+			children = (
+				3CBBC67A2945F79C0074C2FD /* iOS_loginRasidTests.swift */,
+				3CBBC6812945F7EB0074C2FD /* networkTests.swift */,
+			);
+			path = iOS_loginRasidTests;
+			sourceTree = "<group>";
+		};
 		3CC03DA3292F933F0081C325 /* Presenter */ = {
 			isa = PBXGroup;
 			children = (
@@ -574,6 +607,24 @@
 			productReference = 3C2C55EC292F465500C316FB /* iOS_loginRasid.app */;
 			productType = "com.apple.product-type.application";
 		};
+		3CBBC6772945F79B0074C2FD /* iOS_loginRasidTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 3CBBC6802945F79C0074C2FD /* Build configuration list for PBXNativeTarget "iOS_loginRasidTests" */;
+			buildPhases = (
+				3CBBC6742945F79B0074C2FD /* Sources */,
+				3CBBC6752945F79B0074C2FD /* Frameworks */,
+				3CBBC6762945F79B0074C2FD /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				3CBBC67D2945F79C0074C2FD /* PBXTargetDependency */,
+			);
+			name = iOS_loginRasidTests;
+			productName = iOS_loginRasidTests;
+			productReference = 3CBBC6782945F79B0074C2FD /* iOS_loginRasidTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -586,6 +637,10 @@
 				TargetAttributes = {
 					3C2C55EB292F465500C316FB = {
 						CreatedOnToolsVersion = 14.0.1;
+					};
+					3CBBC6772945F79B0074C2FD = {
+						CreatedOnToolsVersion = 14.0.1;
+						TestTargetID = 3C2C55EB292F465500C316FB;
 					};
 				};
 			};
@@ -607,6 +662,7 @@
 			projectRoot = "";
 			targets = (
 				3C2C55EB292F465500C316FB /* iOS_loginRasid */,
+				3CBBC6772945F79B0074C2FD /* iOS_loginRasidTests */,
 			);
 		};
 /* End PBXProject section */
@@ -629,6 +685,13 @@
 				3C2C561D292F4DF900C316FB /* Colors.xcassets in Resources */,
 				3C2C55F9292F465500C316FB /* Images.xcassets in Resources */,
 				3C2C561A292F4D6200C316FB /* swiftgen.yml in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		3CBBC6762945F79B0074C2FD /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -723,7 +786,24 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		3CBBC6742945F79B0074C2FD /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				3CBBC6822945F7EB0074C2FD /* networkTests.swift in Sources */,
+				3CBBC67B2945F79C0074C2FD /* iOS_loginRasidTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		3CBBC67D2945F79C0074C2FD /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = 3C2C55EB292F465500C316FB /* iOS_loginRasid */;
+			targetProxy = 3CBBC67C2945F79C0074C2FD /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
 		3C2C55FA292F465500C316FB /* LaunchScreen.storyboard */ = {
@@ -942,6 +1022,40 @@
 			};
 			name = Release;
 		};
+		3CBBC67E2945F79C0074C2FD /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "abd2lrady.iOS-loginRasidTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_loginRasid.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS_loginRasid";
+			};
+			name = Debug;
+		};
+		3CBBC67F2945F79C0074C2FD /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				GENERATE_INFOPLIST_FILE = YES;
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = "abd2lrady.iOS-loginRasidTests";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_EMIT_LOC_STRINGS = NO;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/iOS_loginRasid.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/iOS_loginRasid";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -959,6 +1073,15 @@
 			buildConfigurations = (
 				3C2C5601292F465500C316FB /* Debug */,
 				3C2C5602292F465500C316FB /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		3CBBC6802945F79C0074C2FD /* Build configuration list for PBXNativeTarget "iOS_loginRasidTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				3CBBC67E2945F79C0074C2FD /* Debug */,
+				3CBBC67F2945F79C0074C2FD /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

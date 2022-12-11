@@ -8,8 +8,6 @@
 import Foundation
 import Alamofire
 
-typealias APIRouterProtocolAndConvertible = APIRouterProtocol & URLRequestConvertible
-
 enum APIError: Error {
     case noStatusCode
     case unauthorized
@@ -19,12 +17,19 @@ enum APIError: Error {
 class APIClient {
     
     static let shared = APIClient()
+    let session: Session
+    let interceptor: RequestInterceptor?
+    init(configuration: URLSessionConfiguration = .default,
+         interceptor: RequestInterceptor? = AuthInterceptor(authToken: "",
+                                                            retryLimit: 3,
+                                                            retryStatusCodes: 400..<500)) {
+        session = Alamofire.Session(configuration: configuration)
+        self.interceptor = interceptor
+    }
     
-    private init() {}
-    
-    let interceptor = AuthInterceptor(authToken: "",
-                                      retryLimit: 3,
-                                      retryStatusCodes: 400..<500)
+//    let interceptor = AuthInterceptor(authToken: "",
+//                                      retryLimit: 3,
+//                                      retryStatusCodes: 400..<500)
     
     func request<ResponseType: Codable>(for endpoint: URlRequestConvertable,
                                         responseType: ResponseType.Type,
@@ -32,8 +37,7 @@ class APIClient {
         
         guard let url = try? endpoint.asURLRequest() else { fatalError("can`t get url") }
         
-        
-        AF.request(url, interceptor: interceptor)
+        session.request(url, interceptor: interceptor)
             .validate()
             .responseData { response in
             debugPrint(response)
