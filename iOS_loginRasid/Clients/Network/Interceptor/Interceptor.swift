@@ -16,7 +16,7 @@ class AuthInterceptor: RequestInterceptor {
     
     init(authToken: String,
          retryLimit: Int = 1,
-         retryStatusCodes: Range<Int>) {
+         retryStatusCodes: Range<Int> = (400 ..< 500)) {
         self.authToken = authToken
         self.retryLimit = retryLimit
         self.retryStatusCodes = retryStatusCodes
@@ -38,7 +38,9 @@ class AuthInterceptor: RequestInterceptor {
                for session: Session,
                dueTo error: Error,
                completion: @escaping (RetryResult) -> Void) {
-        if request.request?.method == .get {
+        if request.request?.method == .get,
+            request.retryCount < retryLimit {
+            print(request.retryCount)
             completion(.retry)
         } else {
             completion(.doNotRetry)

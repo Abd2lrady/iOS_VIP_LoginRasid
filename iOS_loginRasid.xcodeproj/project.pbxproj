@@ -29,8 +29,10 @@
 		3C2C5644292F6D6500C316FB /* LoginCredentials.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5643292F6D6500C316FB /* LoginCredentials.swift */; };
 		3C2C5647292F6F5400C316FB /* AuthRepo.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5646292F6F5400C316FB /* AuthRepo.swift */; };
 		3C2C564B292F735E00C316FB /* IntroViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3C2C5649292F735E00C316FB /* IntroViewController.swift */; };
+		3CA03A81294766A500364231 /* NetworkStubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA03A80294766A500364231 /* NetworkStubs.swift */; };
+		3CA03A83294766F100364231 /* URLProtocolStub.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CA03A82294766F100364231 /* URLProtocolStub.swift */; };
 		3CBBC67B2945F79C0074C2FD /* iOS_loginRasidTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBC67A2945F79C0074C2FD /* iOS_loginRasidTests.swift */; };
-		3CBBC6822945F7EB0074C2FD /* networkTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBC6812945F7EB0074C2FD /* networkTests.swift */; };
+		3CBBC6822945F7EB0074C2FD /* NetworkManagerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CBBC6812945F7EB0074C2FD /* NetworkManagerTest.swift */; };
 		3CC03D98292F89340081C325 /* UIView+Design.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3CC03D97292F89340081C325 /* UIView+Design.swift */; };
 		3CC03D99292F8B250081C325 /* IntroViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3CC03D9B292F8B250081C325 /* IntroViewController.xib */; };
 		3CC03D9E292F8F220081C325 /* Cairo-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 3C2C5627292F517E00C316FB /* Cairo-Black.ttf */; };
@@ -106,9 +108,11 @@
 		3C2C5643292F6D6500C316FB /* LoginCredentials.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginCredentials.swift; sourceTree = "<group>"; };
 		3C2C5646292F6F5400C316FB /* AuthRepo.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthRepo.swift; sourceTree = "<group>"; };
 		3C2C5649292F735E00C316FB /* IntroViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IntroViewController.swift; sourceTree = "<group>"; };
+		3CA03A80294766A500364231 /* NetworkStubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkStubs.swift; sourceTree = "<group>"; };
+		3CA03A82294766F100364231 /* URLProtocolStub.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = URLProtocolStub.swift; sourceTree = "<group>"; };
 		3CBBC6782945F79B0074C2FD /* iOS_loginRasidTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = iOS_loginRasidTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		3CBBC67A2945F79C0074C2FD /* iOS_loginRasidTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = iOS_loginRasidTests.swift; sourceTree = "<group>"; };
-		3CBBC6812945F7EB0074C2FD /* networkTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = networkTests.swift; sourceTree = "<group>"; };
+		3CBBC6812945F7EB0074C2FD /* NetworkManagerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkManagerTest.swift; sourceTree = "<group>"; };
 		3CC03D97292F89340081C325 /* UIView+Design.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Design.swift"; sourceTree = "<group>"; };
 		3CC03D9A292F8B250081C325 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = Base; path = Base.lproj/IntroViewController.xib; sourceTree = "<group>"; };
 		3CC03D9C292F8B390081C325 /* ar */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = ar; path = ar.lproj/LaunchScreen.strings; sourceTree = "<group>"; };
@@ -401,11 +405,21 @@
 			path = View;
 			sourceTree = "<group>";
 		};
+		3CA03A7F2947632700364231 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+				3CBBC6812945F7EB0074C2FD /* NetworkManagerTest.swift */,
+				3CA03A80294766A500364231 /* NetworkStubs.swift */,
+				3CA03A82294766F100364231 /* URLProtocolStub.swift */,
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
 		3CBBC6792945F79C0074C2FD /* iOS_loginRasidTests */ = {
 			isa = PBXGroup;
 			children = (
+				3CA03A7F2947632700364231 /* Network */,
 				3CBBC67A2945F79C0074C2FD /* iOS_loginRasidTests.swift */,
-				3CBBC6812945F7EB0074C2FD /* networkTests.swift */,
 			);
 			path = iOS_loginRasidTests;
 			sourceTree = "<group>";
@@ -792,8 +806,10 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				3CBBC6822945F7EB0074C2FD /* networkTests.swift in Sources */,
+				3CBBC6822945F7EB0074C2FD /* NetworkManagerTest.swift in Sources */,
 				3CBBC67B2945F79C0074C2FD /* iOS_loginRasidTests.swift in Sources */,
+				3CA03A81294766A500364231 /* NetworkStubs.swift in Sources */,
+				3CA03A83294766F100364231 /* URLProtocolStub.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

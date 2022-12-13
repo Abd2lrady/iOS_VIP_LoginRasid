@@ -23,7 +23,7 @@ enum AuthAPIRouter: URlRequestConvertable {
     var method: NetworkRequestMethod {
         switch self {
         case .login:
-            return .get
+            return .post
         }
     }
     

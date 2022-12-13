@@ -17,8 +17,8 @@ enum APIError: Error {
 class APIClient {
     
     static let shared = APIClient()
-    let session: Session
-    let interceptor: RequestInterceptor?
+    private let session: Session
+    private let interceptor: RequestInterceptor?
     init(configuration: URLSessionConfiguration = .default,
          interceptor: RequestInterceptor? = AuthInterceptor(authToken: "",
                                                             retryLimit: 3,
@@ -37,9 +37,10 @@ class APIClient {
         
         guard let url = try? endpoint.asURLRequest() else { fatalError("can`t get url") }
 
-        session.request(url, interceptor: interceptor)
-            .validate()
-            .responseData { response in
+        session.request(url,
+                        interceptor: interceptor)
+        .validate()
+        .responseData { response in
             debugPrint(response)
             guard response.response?.statusCode != nil
             else {
